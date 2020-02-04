@@ -1,0 +1,29 @@
+.center {
+    text-align:center;
+    padding:20px;
+}
+
+.pokedex {
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    text-align:left;
+}
+
+p {
+    padding:10px;
+    border-radius:0px 0px 12px 0px;
+    border-width:1px 3px 5px 1px;
+    border-color:#FFC080;
+    border-style:solid;
+}
+
+.entry {
+    padding-left:30%;
+}
+
+.type {
+    padding:4px;
+    border-radius:8px;
+    font-size: 8pt;
+    color:white;
+}

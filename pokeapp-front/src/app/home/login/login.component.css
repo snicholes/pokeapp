@@ -1,0 +1,31 @@
+.wrap {
+    border-style: solid;
+    border-color: #DD6040;
+    border-width: 1px 3px 3px 1px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    display: block;
+}
+
+.formdiv {
+    display: inline-flex;
+}
+
+form {
+    display: table;
+    table-layout: fixed;
+}
+
+span {
+    display: table-row;
+}
+
+p {
+    width: 100%;
+    text-align:center;
+}
+
+label, input {
+    display: table-cell;
+}

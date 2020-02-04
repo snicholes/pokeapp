@@ -1,0 +1,14 @@
+<div class="main">
+    <div class="nav">
+        <a routerLink="home"><b>PokeApp</b></a>
+        <a routerLink="pokedex">Pokedex</a>
+    </div>
+    <div class="nav">
+        <ng-container *ngIf="!isPerson(); else logged">
+            <a routerLink="home">Log In or Sign Up</a>
+        </ng-container>
+        <ng-template #logged>
+            <a routerLink="user">{{ currentPerson.displayName }}</a>
+        </ng-template>
+    </div>
+</div>

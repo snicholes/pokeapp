@@ -1,0 +1,28 @@
+body {
+    background-color: #FFC080;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Century Gothic', Calibri, 'Trebuchet MS', sans-serif
+}
+
+button {
+    background-color: #FFC080;
+    color: #AD4020;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+    border-color: #AD4020;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+button:hover {
+    background-color: #DFA060;
+}
+
+button:active {
+    border-width: 1px;
+}
+
+.main {
+    background-color: #FFE9B0;
+    border-radius: 20px;
+    margin:15px;
+}

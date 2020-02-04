@@ -1,0 +1,45 @@
+<div class="main">
+    <div class="wrap">
+        <h1>User Settings</h1>
+        <b>Display Name: </b>{{ currentPerson.displayName }} <a (click)="toggleChangingDisplay()"><i>Change</i></a><br>
+        <b>Username: </b>{{ currentPerson.username }}<br>
+        <b>Money: </b>{{ currentPerson.money }}<br>
+        <a (click)="toggleChangingPassword()"><i>Change Password</i></a><br>
+        <br><br>
+        <ng-container *ngIf="changingPassword">
+            <form>
+                <span>
+                    <h3>Change Password</h3>
+                </span>
+                <span>
+                    <label for="pass1">Enter new password: </label>
+                    <input type="password" [(ngModel)]="passwd1" name="pass1" />
+                </span>
+                <span>
+                    <label for="pass2">Confirm password: </label>
+                    <input type="password" [(ngModel)]="passwd2" name="pass2" />
+                </span>
+                <span>
+                    <button type="button" (click)="changePassword()">Submit</button>
+                </span>
+            </form>
+        </ng-container>
+        <ng-container *ngIf="changingDisplay">
+            <form>
+                <span>
+                    <h3>Change Display Name</h3>
+                </span>
+                <span>
+                    <label for="displayname">Enter new display name: </label>
+                    <input type="text" [(ngModel)]="displayName" name="displayname" /><br>
+                </span>
+                <span>
+                    <button type="button" (click)="changeDisplayName()">Submit</button>
+                </span>
+            </form>
+        </ng-container>
+        <ng-container *ngIf="success">
+            Changed Successfully.
+        </ng-container>
+    </div>
+</div>
