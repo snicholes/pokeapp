@@ -1,0 +1,39 @@
+<div class="wrap">
+    <ng-container *ngIf="!isPerson(); else display">
+        <div class="formdiv">
+            <form>
+                <span>
+                    <h3>Log In</h3>
+                </span>
+                <span>
+                    <label for="username">Username:&nbsp;&nbsp;</label>
+                    <input type="text" [(ngModel)]="username" name="username" /><br>
+                </span>
+                <span>
+                    <label for="password">Password:&nbsp;&nbsp;</label>
+                    <input type="password" [(ngModel)]="passwd" name="password" /><br>
+                </span>
+            </form>
+        </div>
+        <p>
+            <button type="button" (click)="login()">Submit</button>
+        </p>
+    </ng-container>
+    <ng-template #display>
+        <span>
+            <h3>Welcome,
+                <ng-container *ngIf="currentPerson.displayName; else usernm">{{ currentPerson.displayName }}
+                </ng-container>
+                <ng-template #usernm>{{ currentPerson.username }}</ng-template>
+                !
+            </h3>
+        </span>
+        <br>
+        <span>
+            Money: {{ currentPerson.money }} pokedollars
+        </span>
+        <p>
+            <button type="button" (click)="logout()">Log Out</button>
+        </p>
+    </ng-template>
+</div>

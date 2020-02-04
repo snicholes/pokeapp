@@ -1,0 +1,31 @@
+.nav {
+    padding: 15px 0px;
+    width: 50%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    border-width: 1px 2px 2px 1px;
+    border-color:#FFE9B0;
+    border-style:solid;
+    padding:6px;
+    border-radius:6px;
+}
+
+a:hover {
+    background-color: #FFC080;
+    color: #AD4020;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+    border-color: #AD4020;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+a:active {
+    background-color: #DFA060;
+    border-width: 1px;
+}

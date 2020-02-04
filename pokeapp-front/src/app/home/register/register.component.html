@@ -1,0 +1,30 @@
+<ng-container *ngIf="!isPerson()">
+    <div class="wrap">
+        <div class="formdiv">
+            <form>
+                <span>
+                    <h3>Register</h3>
+                </span>
+                <span>
+                    <label for="username">Username:&nbsp;&nbsp;</label>
+                    <input type="text" [(ngModel)]="person.username" name="username" /><br>
+                </span>
+                <span>
+                    <label for="password1">Password:&nbsp;&nbsp;</label>
+                    <input type="password" [(ngModel)]="password1" name="password1" /><br>
+                </span>
+                <span>
+                    <label for="password2">Confirm Password:&nbsp;&nbsp;</label>
+                    <input type="password" [(ngModel)]="password2" name="password2" /><br>
+                </span>
+                <span>
+                    <label for="display">Display Name:&nbsp;&nbsp;</label>
+                    <input type="text" [(ngModel)]="person.displayName" name="display" /><br>
+                </span>
+            </form>
+        </div>
+        <p>
+            <button type="button" (click)="register()">Submit</button>
+        </p>
+    </div>
+</ng-container>
