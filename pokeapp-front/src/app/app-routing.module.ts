@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home/home.component';
 import { PokedexComponent } from './pokedex/pokedex/pokedex.component';
 import { UserComponent } from './user/user.component';
+import { LocationComponent } from './location/location.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'user',
     component: UserComponent
+  },
+  {
+    path: 'location/:id',
+    component: LocationComponent
   }
 ];
 

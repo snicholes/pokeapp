@@ -1,0 +1,12 @@
+<div class="entry">
+    <p>
+        <b>{{ currentPokemon.pokedexId }}:</b> {{ currentPokemon.name }}<br><br>
+        <span class="type"
+            [ngStyle]="{'background-color': '#' + currentPokemon.types[0].color}">{{currentPokemon.types[0].name}}</span>&nbsp;
+        <span class="type" *ngIf="currentPokemon.types[1]"
+            [ngStyle]="{'background-color': '#' + currentPokemon.types[1].color}">{{currentPokemon.types[1].name}}</span>
+        <ng-container *ngIf="minLevel && maxLevel">
+            &nbsp;&nbsp;Levels {{minLevel}}-{{maxLevel}}
+        </ng-container>
+    </p>
+</div>

@@ -22,7 +22,7 @@ import com.revature.services.PersonService;
 public class PersonController {
 	@Autowired
 	PersonService pserv;
-	
+		
 	@PostMapping("/new")
 	public ResponseEntity<Person> register(Person p) {
 		Person created = pserv.create(p);
@@ -44,7 +44,7 @@ public class PersonController {
 	public ResponseEntity<Person> login(String user, String pass, HttpSession session) {
 		Person p = pserv.getByUserPass(user, pass);
 		if(p == null) {
-			return ResponseEntity.status(401).build();
+			return ResponseEntity.status(404).build();
 		}
 		session.setAttribute("person", p);
 		return ResponseEntity.ok(p);

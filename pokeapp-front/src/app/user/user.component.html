@@ -3,7 +3,18 @@
         <h1>User Settings</h1>
         <b>Display Name: </b>{{ currentPerson.displayName }} <a (click)="toggleChangingDisplay()"><i>Change</i></a><br>
         <b>Username: </b>{{ currentPerson.username }}<br>
-        <b>Money: </b>{{ currentPerson.money }}<br>
+        <b>Money: </b>{{ currentPerson.money }} pokedollars<br>
+        <b>Items: </b><br>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+            </tr>
+            <tr *ngFor="let i of currentPerson.items">
+                <td>{{ i.item.name }}</td>
+                <td>{{ i.quantity }}</td>
+            </tr>
+        </table>
         <a (click)="toggleChangingPassword()"><i>Change Password</i></a><br>
         <br><br>
         <ng-container *ngIf="changingPassword">

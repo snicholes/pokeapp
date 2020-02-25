@@ -13,11 +13,12 @@ export class NavbarComponent implements OnInit, OnChanges {
   constructor(private personService: PersonService) { }
 
   ngOnInit() {
-    this.personService.login(null, null).subscribe(
-      resp => {
-        this.currentPerson = resp;
-      }
-    );
+    setTimeout(() => {
+      this.personService.login(null, null).subscribe(
+        resp => {
+          this.currentPerson = resp;
+        });
+    });
   }
 
   ngOnChanges() {

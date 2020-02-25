@@ -34,3 +34,7 @@ p {
 label, input {
     display: table-cell;
 }
+
+table, td {
+    border: solid 1px black;
+}

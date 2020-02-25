@@ -1,0 +1,35 @@
+<div class="main">
+    <div class="inner">
+        <h2>{{ currentLocation.name }}</h2>
+        <br>
+        <a *ngIf="currentLocation.north" (click)="nav('north')">{{ currentLocation.north.name }}<br></a>
+        <a *ngIf="currentLocation.east" (click)="nav('east')">{{ currentLocation.east.name }}<br></a>
+        <a *ngIf="currentLocation.south" (click)="nav('south')">{{ currentLocation.south.name }}<br></a>
+        <a *ngIf="currentLocation.west" (click)="nav('west')">{{ currentLocation.west.name }}</a>
+        <!--<ng-container *ngFor="let p of currentLocation.pokemon">
+            <app-entry [currentId]="p.id.pokedexId" [minLevel]="p.minLevel" [maxLevel]="p.maxLevel"></app-entry>
+        </ng-container>-->
+        <app-encounter [locId]="currentLocation.id"></app-encounter>
+    </div>
+    <!-- form for adding pokemon to a location
+    <div class="inner">
+        <h3>Pokemon</h3>
+        <form>
+            <select id="pokedex">
+                <option *ngFor="let p of pokedex" [value]="p.pokedexId">{{ p.pokedexId }}</option>
+            </select><br>
+            <label for="minLevel">Min Level: </label>
+            <input type="number" min="1" max="100" name="minLevel" [(ngModel)]="currentLocationPokedex.minLevel" /><br>
+            <label for="maxLevel">Max Level: </label>
+            <input type="number" min="1" max="100" name="maxLevel" [(ngModel)]="currentLocationPokedex.maxLevel" /><br>
+            <button type="button" (click)="addToChosen()">Add to Chosen</button><br>
+            <ul>
+                <ng-container *ngFor="let c of chosenPokemon">
+                    <li (click)="removeFromChosen(c)">{{ c.id.pokedexId }}, {{ c.minLevel }}, {{ c.maxLevel }}</li>
+                </ng-container>
+            </ul>
+            <button type="button" (click)="updateLocation()">Submit</button>
+        </form>
+    </div>
+    form for adding pokemon to a location -->
+</div>

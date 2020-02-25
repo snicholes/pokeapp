@@ -1,11 +1,11 @@
 .wrap {
-    border-style: solid;
-    border-color: #DD6040;
-    border-width: 1px 3px 3px 1px;
-    border-radius: 20px;
     padding: 20px;
     margin: 10px;
     display: block;
+    border-radius:0px 0px 12px 0px;
+    border-width:1px 3px 5px 1px;
+    border-color:#FFC080;
+    border-style:solid;
 }
 
 .formdiv {

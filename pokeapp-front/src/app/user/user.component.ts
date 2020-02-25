@@ -23,7 +23,13 @@ export class UserComponent implements OnInit {
     if (!this.personService.isPerson()) {
       this.router.navigate(['home']);
     }
-    this.currentPerson = this.personService.getPerson();
+    setTimeout(() => {
+      this.personService.login(null, null).subscribe(
+        resp => {
+          this.currentPerson = resp;
+          console.log(this.currentPerson);
+        });
+    });
     this.passwd1 = '';
     this.passwd2 = '';
     this.success = false;

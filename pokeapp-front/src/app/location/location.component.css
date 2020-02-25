@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner {
+    width:40%;
+    padding: 20px;
+    margin: 10px;
+    display: block;
+    border-radius:0px 0px 12px 0px;
+    border-width:1px 3px 5px 1px;
+    border-color:#FFC080;
+    border-style:solid;
+}
+
+a {
+    padding: 3px;
+    display: inline;
+    border-radius: 15px;
+}
+
+a:hover {
+    color:#904030;
+    background-color: #FFC080;
+}

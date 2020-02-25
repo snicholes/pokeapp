@@ -1,22 +1,21 @@
 package com.revature.beans;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Inheritance(strategy=InheritanceType.JOINED)
 @Table
 public class Item {
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="item")
 	@SequenceGenerator(name="item", sequenceName="item_seq", allocationSize=1)
 	private Integer id;
+	@Column
 	private String name;
 	public Integer getId() {
 		return id;

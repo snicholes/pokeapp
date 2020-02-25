@@ -4,14 +4,8 @@
         <div class="pokedex">
             <ng-container *ngFor="let e of pokedex; let i = index">
                 <div class="entry">
-                <p>
-                    <b>{{ e.pokedexId }}:</b> {{ e.name }}<br><br>
-                    <span class="type"
-                        [ngStyle]="{'background-color': '#' + e.types[0].color}">{{e.types[0].name}}</span>&nbsp;
-                    <span class="type" *ngIf="e.types[1]"
-                        [ngStyle]="{'background-color': '#' + e.types[1].color}">{{e.types[1].name}}</span>
-                </p>
-            </div>
+                    <app-entry [currentPokemon]="e"></app-entry>
+                </div>
             </ng-container>
         </div>
     </div>

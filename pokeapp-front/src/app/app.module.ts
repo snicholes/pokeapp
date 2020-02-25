@@ -14,6 +14,9 @@ import { RegisterComponent } from './home/register/register.component';
 import { HomeComponent } from './home/home/home.component';
 import { PokedexComponent } from './pokedex/pokedex/pokedex.component';
 import { UserComponent } from './user/user.component';
+import { LocationComponent } from './location/location.component';
+import { EntryComponent } from './pokedex/entry/entry.component';
+import { EncounterComponent } from './pokedex/encounter/encounter.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { UserComponent } from './user/user.component';
     RegisterComponent,
     HomeComponent,
     PokedexComponent,
-    UserComponent
+    UserComponent,
+    LocationComponent,
+    EntryComponent,
+    EncounterComponent,
   ],
   imports: [
     BrowserModule,

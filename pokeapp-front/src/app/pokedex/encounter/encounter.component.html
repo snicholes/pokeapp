@@ -1,0 +1,14 @@
+<ng-container *ngIf="encounterPokemon">
+    <div class="outer">
+        <div class="inner">
+            <span>{{ encounterPokemon.pokedex.name }} appeared!</span>
+            <span>Level {{ encounterPokemon.lvl }}</span>
+        </div>
+        <div>
+            <span>HP {{ encounterPokemon.hp }}/{{ encounterPokemon.maxHp }}</span>
+            <ng-container *ngIf="encounterPokemon.shiny == 1">
+                Shiny!
+            </ng-container>
+        </div>
+    </div>
+</ng-container>

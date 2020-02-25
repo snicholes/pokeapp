@@ -19,6 +19,10 @@ drop sequence person_seq;
 drop sequence pokedex_seq;
 drop sequence type_seq;
 drop sequence item_seq;
+drop sequence person_item_seq;
+drop sequence location_seq;
+drop sequence location_pokedex_seq;
+drop sequence pokemon_seq;
 /*
     person: represents actual players
     username: the person's unique username with which to log in
@@ -63,7 +67,11 @@ create table pokemon (
     hp number(3) not null,
     max_hp number(3) not null,
     shiny number(3) not null,
-    exp_pts number(10) not null
+    exp_pts number(10) not null,
+    pokedex_id number(20) not null,
+    owner_id number(20) not null,
+    constraint fk_pokemon_pokedex foreign key (pokedex_id) references pokedex(id),
+    constraint fk_pokemon_person foreign key (owner_id) references person(id)
 );
 
 /*
@@ -80,10 +88,16 @@ create table type (
 /*
     location: represents areas in the game that a player can visit to catch pokemon
     name: the name of the location (i.e. viridian forest)
+    north_id: represents the location to the north of this one
+    east_id, south_id, west_id: see above
 */
 create table location (
     id number(20) primary key,
-    name varchar2(60) not null unique
+    name varchar2(60) not null unique,
+    north_id number(20),
+    east_id number(20),
+    south_id number(20),
+    west_id number(20)
 );
 
 /*
@@ -165,6 +179,7 @@ create table location_pokedex (
     person_item: represents the item a person has and the quantity
 */
 create table person_item (
+    id number(20) primary key,
     person_id number(20),
     constraint fk_person_item_person foreign key (person_id) references person(id),
     item_id number(20),
@@ -176,3 +191,7 @@ create sequence person_seq;
 create sequence pokedex_seq;
 create sequence type_seq;
 create sequence item_seq;
+create sequence person_item_seq;
+create sequence location_seq;
+create sequence location_pokedex_seq;
+create sequence pokemon_seq;

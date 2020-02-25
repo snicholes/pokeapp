@@ -18,7 +18,13 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.username = '';
     this.passwd = '';
-    setTimeout(() => { this.currentPerson = this.personService.getPerson(); });
+    setTimeout(() => {
+      this.personService.login(null, null).subscribe(
+        resp => {
+          this.currentPerson = resp;
+        });
+    });
+    // setTimeout(() => { this.currentPerson = this.personService.getPerson(); });
   }
 
   login() {
@@ -31,12 +37,15 @@ export class LoginComponent implements OnInit {
         this.currentPerson = new Person();
       }
     );
+    this.router.navigate(['home']);
   }
 
   logout() {
     this.personService.logout().subscribe(
       resp => {
         this.currentPerson = null;
+        this.username = null;
+        this.passwd = null;
       }
     );
   }

@@ -789,4 +789,337 @@ insert into pokeball (multiplier, item_id)
 insert into potion (hp, item_id)
     values (20, 2);
     
+insert into person_item (id, person_id, item_id, quantity)
+    values (1, 1, 1, 5);
+insert into person_item (id, person_id, item_id, quantity)
+    values (2, 1, 2, 5);
+    
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (1, 'Route 1', 36, null, 35, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (2, 'Route 2', 26, null, 36, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (3, 'Route 3', null, 27, null, 37);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (4, 'Route 4', null, 38, null, 27);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (5, 'Route 5', 38, null, 42, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (6, 'Route 6', 42, null, 39, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (7, 'Route 7', null, 42, null, 40);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (8, 'Route 8', null, 41, null, 42);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (9, 'Route 9', null, 30, 29, 38);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (10, 'Route 10', 29, null, 41, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (11, 'Route 11', null, 12, null, 39);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (12, 'Route 12', 41, null, 13, 11);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (13, 'Route 13', 12, null, 14, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (14, 'Route 14', 13, null, null, 15);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (15, 'Route 15', null, 14, null, 43);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (16, 'Route 16', null, 40, 17, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (17, 'Route 17', 16, null, 18, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (18, 'Route 18', 17, 43, null, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (19, 'Route 19', 43, null, null, 32);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (20, 'Route 20', null, 32, null, 44);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (21, 'Route 21', 35, null, 44, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (22, 'Route 22', 23, 36, null, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (23, 'Route 23', 34, null, 22, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (24, 'Route 24', null, 25, 38, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (25, 'Route 25', null, null, null, 24);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (26, 'Viridian Forest', 37, null, 2, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (27, 'Mt. Moon', null, 4, null, 3);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (28, 'Cerulean Cave', null, 24, 4, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (29, 'Rock Tunnel', 9, null, 10, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (30, 'Power Plant', null, null, null, 9);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (31, 'Pokemon Tower', null, null, null, 41);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (32, 'Seafoam Islands', null, 19, null, 20);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (33, 'Pokemon Mansion', null, 44, null, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (34, 'Victory Road', 45, null, 23, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (35, 'Pallet Town', 1, null, null, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (36, 'Viridian City', 2, null, 1, 22);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (37, 'Pewter City', null, 3, 26, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (38, 'Cerulean City', 24, 9, 5, 4);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (39, 'Vermilion City', 6, 11, null, null);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (40, 'Celadon City', null, 7, null, 16);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (41, 'Lavender Town', 10, 31, 12, 8);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (42, 'Saffron City', 5, 8, 6, 7);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (43, 'Fuchsia City', null, 15, 19, 18);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (44, 'Cinnabar Island', 21, 20, null, 33);
+insert into location (id, name, north_id, east_id, south_id, west_id)
+    values (45, 'Indigo Plateau', null, null, 34, null);
+
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (1,19,2,4);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (1,16,2,4);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (3,27,3,7);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (3,56,9,9);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (3,29,3,7);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (3,16,6,8);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (3,19,6,8);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (3,21,5,8);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (2,19,2,5);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (2,16,3,5);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (2,32,4,6);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (2,13,3,5);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (2,29,4,6);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (2,10,3,5);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (4,27,6,12);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (4,56,9,9);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (4,19,8,12);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (4,21,8,12);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (4,23,6,12);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (5,43,13,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (5,52,10,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (5,16,13,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (5,63,7,7);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (5,56,10,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (5,69,13,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (5,19,14,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (5,17,17,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (5,39,3,7);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (9,29,16,18);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (9,19,14,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (9,32,16,18);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (9,30,18,18);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (9,20,20,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (9,21,13,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (9,23,11,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (9,33,18,18);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (9,27,11,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (9,22,19,19);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (6,43,13,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (6,16,13,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (6,52,10,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (6,19,14,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (6,17,17,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (6,63,7,7);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (6,39,3,7);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (6,56,10,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (6,69,13,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,43,19,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,58,18,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,16,19,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,52,17,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,69,19,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,39,19,24);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,17,24,24);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,56,17,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,37,18,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,19,20,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (7,63,15,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,63,15,19);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,64,20,27);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,27,17,19);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,16,18,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,37,15,18);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,52,18,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,39,19,24);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,19,20,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,17,24,24);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,58,15,18);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,56,18,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (8,23,17,19);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (11,21,13,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (11,23,12,15);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (11,96,9,15);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (11,16,16,18);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (11,19,15,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (11,17,18,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (11,20,17,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (11,27,12,15);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (16,22,24,24);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (16,20,23,25);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (16,21,20,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (16,84,18,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (16,19,18,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (17,85,29,29);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (17,21,20,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (17,22,25,27);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (17,84,24,28);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (17,20,25,29);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (17,77,28,32);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (18,21,20,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (18,22,25,29);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (18,19,23,24);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (18,84,24,28);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (18,20,25,29);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (15,70,30,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (15,132,26,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (15,16,23,23);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (15,69,22,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (15,49,30,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (15,17,28,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (15,48,26,28);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (15,44,30,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (15,43,22,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (14,132,23,23);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (14,17,28,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (14,48,24,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (14,69,22,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (14,49,30,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (14,16,26,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (14,44,30,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (14,43,22,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (14,70,30,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (13,17,28,28);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (13,132,25,25);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (13,69,22,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (13,70,28,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (13,48,24,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (13,83,26,31);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (13,16,25,27);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (13,44,28,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (13,43,22,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (19,72,5,40);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (10,29,17,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (10,66,16,18);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (10,100,14,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (10,21,13,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (10,23,11,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (10,81,16,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (10,32,17,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (10,27,11,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (10,20,20,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (10,19,18,18);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (12,69,22,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (12,16,23,27);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (12,48,24,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (12,83,26,31);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (12,44,28,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (29,66,15,21);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (29,74,16,20);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (29,41,15,21);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (29,95,13,15);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (22,32,2,4);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (22,19,2,4);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (22,21,3,5);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (22,56,3,5);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (22,29,2,4);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (26,10,3,5);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (26,11,4,6);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (26,25,3,5);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (26,14,4,6);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (26,13,3,5);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (27,41,6,11);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (27,35,8,8);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (27,74,8,10);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (27,46,8,8);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (27,27,9,9);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (24,17,17,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (24,69,12,14);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (24,63,8,12);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (24,11,8,8);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (24,43,12,14);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (24,10,7,7);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (24,13,7,7);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (24,16,12,13);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (24,14,8,8);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (24,48,13,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (25,69,12,14);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (25,17,17,17);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (25,14,7,9);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (25,43,12,14);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (25,11,7,9);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (25,10,8,8);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (25,16,13,13);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (25,13,8,8);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (25,63,10,12);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (25,48,13,16);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (20,72,5,40);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (21,114,28,32);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (21,16,21,23);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (21,17,30,32);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (21,19,21,23);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (21,20,30,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (21,72,5,40);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,22,38,43);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,57,41,46);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,56,36,41);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,21,26,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,24,41,41);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,132,33,43);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,23,26,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,28,41,41);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,27,26,26);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,30,41,44);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (23,33,41,44);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (30,125,33,36);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (30,26,33,36);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (30,100,21,23);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (30,89,33,37);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (30,25,20,24);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (30,88,33,37);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (30,81,21,23);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (30,82,32,35);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,79,30,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,41,21,21);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,90,28,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,42,29,29);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,86,30,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,120,28,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,55,38,38);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,54,28,28);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,116,28,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,98,28,30);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (32,80,38,38);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (33,110,37,37);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (33,19,34,37);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (33,109,30,32);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (33,89,39,39);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (33,58,34,34);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (33,77,28,34);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (33,37,34,34);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (33,88,30,32);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (33,20,34,37);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (34,42,40,40);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (34,75,43,44);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (34,74,24,41);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (34,105,40,40);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (34,41,26,44);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (34,95,36,47);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (34,66,22,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (34,67,41,42);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (31,93,20,25);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (31,104,20,22);
+insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) values (31,92,18,24);
+-- select 'insert into location_pokedex (location_id, pokedex_id, min_level, max_level, id) 
+    -- values (' || location_id || ',' || pokedex_id || ',' || min_level || ',' || max_level 
+    -- || ');' from location_pokedex;
+
 commit;

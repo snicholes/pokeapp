@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -26,6 +27,8 @@ public class Pokedex {
 	@ManyToMany(fetch=FetchType.LAZY)
 	@JoinTable(name="pokedex_type", joinColumns=@JoinColumn(name="pokedex_id"), inverseJoinColumns=@JoinColumn(name="type_id"))
 	private Set<Type> types;
+	@OneToMany(mappedBy="pokedex")
+	private Set<LocationPokedex> location;
 	public Integer getPokedexId() {
 		return pokedexId;
 	}
@@ -49,8 +52,8 @@ public class Pokedex {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + pokedexId;
-		//result = prime * result + ((types == null) ? 0 : types.hashCode());
+		result = prime * result + ((pokedexId == null) ? 0 : pokedexId.hashCode());
+		result = prime * result + ((types == null) ? 0 : types.hashCode());
 		return result;
 	}
 	@Override
@@ -67,13 +70,16 @@ public class Pokedex {
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
-		if (pokedexId != other.pokedexId)
+		if (pokedexId == null) {
+			if (other.pokedexId != null)
+				return false;
+		} else if (!pokedexId.equals(other.pokedexId))
 			return false;
-		/*if (types == null) {
+		if (types == null) {
 			if (other.types != null)
 				return false;
 		} else if (!types.equals(other.types))
-			return false;*/
+			return false;
 		return true;
 	}
 	@Override
